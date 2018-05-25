@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'node console-test.js'
+                node 'console-test.js'
             }
         }
         stage('Test') {
