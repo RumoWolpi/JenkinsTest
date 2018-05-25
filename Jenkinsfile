@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh "echo 'Hello World'"
-                sh 'node console-test.js'
+                sh 'npm install'
             }
         }
         stage('Test') {
