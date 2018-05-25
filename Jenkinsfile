@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh "echo 'Hello World'"
-                sh 'npm install'
+                sh 'npm init --y'
             }
         }
         stage('Test') {
