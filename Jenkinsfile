@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'export PATH=/usr/local/bin'
+                sh 'export PATH=/sbin:/usr/sbin:/usr/bin:/usr/local/bin'
                 sh 'npm install'
                 sh 'node console-test.js'
             }
