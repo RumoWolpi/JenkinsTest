@@ -6,9 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh "echo 'Hello World'"
-                sh 'echo %PATH%'
-                sh 'echo %Path%'
-                sh 'echo Path'
+                sh 'node console-test.js'
             }
         }
         stage('Test') {
