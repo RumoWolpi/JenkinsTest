@@ -6,9 +6,9 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh "echo 'Hello World'"
-                echo 'Path'
-                echo '%Path%'
-                echo '%PATH%'
+                sh 'echo %PATH%'
+                sh 'echo %Path%'
+                sh 'echo Path'
             }
         }
         stage('Test') {
