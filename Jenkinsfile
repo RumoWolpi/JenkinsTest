@@ -6,7 +6,9 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh "echo 'Hello World'"
-                sh 'npm init --y'
+                echo 'Path'
+                echo '%Path%'
+                echo '%PATH%'
             }
         }
         stage('Test') {
